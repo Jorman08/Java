@@ -1,7 +1,9 @@
+package Ejercicios;
 import java.util.Scanner; 
 
-public class Ejercicio1 {
+public class almacen {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         // Ejercicio
         double zapatos = 350000;
         double tenis = 280000;
@@ -27,6 +29,6 @@ public class Ejercicio1 {
         System.out.println("El nuevo valor de los jeans es: $" + aumentoJeans);
         System.out.println("El nuevo valor de los zapatos es: $" + disminucionZapatos);
 
-        sc.close();
+        sc.close(); // Cerrar el scanner para liberar recursos
     }
 }
