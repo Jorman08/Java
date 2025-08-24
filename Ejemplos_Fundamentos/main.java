@@ -57,7 +57,7 @@ public class main {
         System.out.println("Nombre: " + nombre);
         System.out.println("Edad: " + edad); */
 
-        // Precación con nextLine() después de nextInt(), nextDouble() o nextBoolean()
+        // Precaución con nextLine() después de nextInt(), nextDouble() o nextBoolean()
         // Cuando se usa nextLine() o nextDouble(),  queda un salto de línea (\n) en el buffer,
         // Lo que puede causar que nextLine() se salte la entrada del usuario.
         // Para esto evitar usar un scanner nextLine() después de nextInt() o nextDouble() para limpiar el buffer
@@ -293,7 +293,7 @@ public class main {
         // Alternativa con foreach de Java 8 usando lambda
         frutas.forEach(fruta -> System.out.println(" ->: " + frutas)); */
 
-        sc.close(); // Cerrar el scanner para liberar recursos
+        // sc.close(); // Cerrar el scanner para liberar recursos
     }
 }
 
