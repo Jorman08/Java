@@ -5,7 +5,7 @@ public class Libro {
     private String autor;
 
     public Libro(String titulo) {
-        this.titulo = titulo;
+        this.titulo = titulo; 
         this.autor = "Desconocido";
     }
 

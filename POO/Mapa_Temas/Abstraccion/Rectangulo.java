@@ -1,6 +1,6 @@
 package POO.Mapa_Temas.Abstraccion;
 
-public class Rectangulo extends FiguraAbstracta {
+public class Rectangulo extends FiguraAbstracta{
     private double ancho;
     private double alto;
 
@@ -8,7 +8,7 @@ public class Rectangulo extends FiguraAbstracta {
         this.ancho = ancho;
         this.alto = alto;
     }
-
+ 
     @Override
     public double calcularArea() {
         return ancho * alto;

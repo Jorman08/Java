@@ -7,7 +7,7 @@ public class Animal {
         this.nombre = nombre;
     }
 
-    public void hacerSonido() {
+    public void Sonido() {
         System.out.println("El animal hace un sonido");
     }
 }

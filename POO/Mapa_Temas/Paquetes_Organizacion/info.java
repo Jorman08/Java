@@ -1,4 +1,3 @@
-package POO.Mapa_Temas.Paquetes_Organizacion;
 // Paquetes y organización del código (modificadores de acceso)
 
 // Definición

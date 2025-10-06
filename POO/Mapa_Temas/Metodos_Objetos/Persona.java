@@ -12,7 +12,7 @@ public class Persona {
     }
 
     // Sobrescribimos toString para mostrar la información de forma legible
-    @Override
+    @Override 
     public String toString() {
         return "Persona{nombre='" + nombre + "', edad=" + edad + "}";
     }
@@ -31,4 +31,7 @@ public class Persona {
     public int hashCode() {
         return Objects.hash(nombre, edad);
     }
+
+    /* // ejemplo hashCode
+    int num1 = hashCode(); */
 }

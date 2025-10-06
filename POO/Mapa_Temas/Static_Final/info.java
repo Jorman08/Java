@@ -10,5 +10,5 @@
 
 // Se usan para:
 // Constantes globales (final static).
-// Contadores estáticos (llevar cuenta de instancias creadas).
+// Contadores estáticos (llevar cuenta de instancias creadas). 
 // Métodos de fábrica estáticos (crear objetos sin new directamente).

@@ -5,8 +5,14 @@ package POO.Mapa_Temas.Composicion_Herencia;
 // Composición: Una clase contiene una instancia de otra clase como atributo. Es una relación "tiene-un".
 // Ejemplo: Carro tiene un Motor.
 
-// Cuándo preferir cada una
 
-// Herencia → Cuando existe una relación clara es-un (ej. Gato es un Animal).
+// Cuándo usar cada uno
 
-// Composición → Cuando quieres reutilizar funcionalidad sin crear una dependencia fuerte, o cuando la relación es tiene-un (ej. Carro tiene un Motor).
+// Usa Herencia cuando:
+// Existe una relación lógica “es-un”.
+// Necesitas polimorfismo para sobrescribir métodos.
+
+// Usa Composición cuando:
+// Necesitas modularidad y bajo acoplamiento.
+// Quieres cambiar comportamientos en tiempo de ejecución.
+// Una clase usa otra como parte de su funcionamiento, no como un tipo de sí misma.
