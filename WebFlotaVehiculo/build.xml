@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="WebFlotaVehiculo" default="dist" basedir=".">
+
+    <!-- Propiedades -->
+    <property name="src" value="src/java"/>
+    <property name="web" value="web"/>
+    <property name="build" value="build"/>
+    <property name="dist" value="dist"/>
+    <property name="war.name" value="WebFlotaVehiculo.war"/>
+
+    <!-- Limpiar -->
+    <target name="clean">
+        <delete dir="${build}"/>
+        <delete dir="${dist}"/>
+    </target>
+
+    <!-- Compilar -->
+    <target name="compile">
+        <mkdir dir="${build}/WEB-INF/classes"/>
+        <javac srcdir="${src}" destdir="${build}/WEB-INF/classes" includeantruntime="false">
+            <classpath>
+                <fileset dir="lib">
+                    <include name="**/*.jar"/>
+                </fileset>
+            </classpath>
+        </javac>
+    </target>
+
+    <!-- Copiar archivos web -->
+    <target name="copy-web">
+        <copy todir="${build}">
+            <fileset dir="${web}"/>
+        </copy>
+    </target>
+
+    <!-- Generar WAR -->
+    <target name="dist" depends="clean, compile, copy-web">
+        <mkdir dir="${dist}"/>
+        <war destfile="${dist}/${war.name}" webxml="${web}/WEB-INF/web.xml" basedir="${build}"/>
+        <echo message="✅ WAR generado correctamente en ${dist}/${war.name}"/>
+    </target>
+
+</project>
